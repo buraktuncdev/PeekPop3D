@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ThirdViewController.swift
 //  3DTouchUIApplicationShortcutIcon
 //
 //  Created by Burak Tunc on 12.01.21.
@@ -7,20 +7,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-   
+class ThirdViewController: UIViewController {
+    
+    @IBOutlet weak var back: UIButton!
+    @IBOutlet weak var photo: UIImageView!
+    var popImage = UIImage()
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        photo.image = popImage
+        self.back.isHidden = true
     }
     
-
-
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
 }
-
